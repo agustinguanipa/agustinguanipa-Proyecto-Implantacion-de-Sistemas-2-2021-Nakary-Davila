@@ -78,9 +78,9 @@ if(isset($_SESSION['FOOD_USER_ID'])){
 								if(isset($_SESSION['FOOD_USER_NAME'])){
 								?>
 							<div id="wallet_top_box">
-								<a href="<?php echo FRONT_SITE_PATH?>wallet" style="color:#fff;">
+								<!-- <a href="<?php echo FRONT_SITE_PATH?>wallet" style="color:#fff;">
 									Wallet Amt:- <?php echo $getWalletAmt?>
-								</a>
+								</a> -->
 								
 							</div>
 								<?php  } ?>
@@ -91,11 +91,11 @@ if(isset($_SESSION['FOOD_USER_ID'])){
 								if(isset($_SESSION['FOOD_USER_NAME'])){
 								?>
 								<ul>
-                                    <li class="top-hover"><a href="#"><?php echo "Welcome <span id='user_top_name'>".$_SESSION['FOOD_USER_NAME'];?></span>  <i class="ion-chevron-down"></i></a>
+                                    <li class="top-hover"><a href="#"><?php echo "Bienvenido(a) <span id='user_top_name'>".$_SESSION['FOOD_USER_NAME'];?></span>  <i class="ion-chevron-down"></i></a>
                                         <ul>
-                                            <li><a href="<?php echo FRONT_SITE_PATH?>profile">Profile  </a></li>
-                                            <li><a href="<?php echo FRONT_SITE_PATH?>order_history">Order History</a></li>
-                                            <li><a href="<?php echo FRONT_SITE_PATH?>logout">Logout</a></li>
+                                            <li><a href="<?php echo FRONT_SITE_PATH?>profile">Perfil  </a></li>
+                                            <li><a href="<?php echo FRONT_SITE_PATH?>order_history">Historial de Ordenes</a></li>
+                                            <li><a href="<?php echo FRONT_SITE_PATH?>logout">Cerrar Sesion</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -127,7 +127,7 @@ if(isset($_SESSION['FOOD_USER_ID'])){
                                         </div>
                                         <div class="login-text-content header_icon">
 											
-												<p>Register <br> or <span>Sign in</span></p>
+												<p>Registrarse <br> o <span>Iniciar Sesión</span></p>
 												
                                         </div>
                                     </a>
@@ -145,11 +145,11 @@ if(isset($_SESSION['FOOD_USER_ID'])){
                                             <span class="count-style" id="totalCartDish"><?php echo $totalCartDish?></span>
                                         </div>
                                         <div class="cart-text">
-                                            <span class="digit">My Cart</span>
+                                            <span class="digit">Mi Carrito</span>
                                             <span class="cart-digit-bold" id="totalPrice">
 											<?php 
 											if($totalPrice!=0){
-												echo $totalPrice.' Rs';
+												echo $totalPrice.' $';
 											}
 											?></span>
                                         </div>
@@ -166,9 +166,9 @@ if(isset($_SESSION['FOOD_USER_ID'])){
 														<h4><a href="javascript:void(0)">
 														<?php echo $list['dish']?>
 														</a></h4>
-														<h6>Qty: <?php echo $list['qty']?></h6>
+														<h6>Cant: <?php echo $list['qty']?></h6>
 														<span><?php echo 
-														$list['qty']*$list['price'];?> Rs</span>
+														$list['qty']*$list['price'];?> $</span>
 													</div>
 													<div class="shopping-cart-delete">
 														<a href="javascript:void(0)" onclick="delete_cart('<?php echo $key?>')"><i class="ion ion-close"></i></a>
@@ -178,12 +178,12 @@ if(isset($_SESSION['FOOD_USER_ID'])){
                                         </ul>
                                         <div class="shopping-cart-total">
                                             <h4>Total : <span class="shop-total" id="shopTotal">
-											<?php echo $totalPrice?> Rs
+											<?php echo $totalPrice?> $
 											</span></h4>
                                         </div>
                                         <div class="shopping-cart-btn">
-                                            <a href="<?php echo FRONT_SITE_PATH?>cart">view cart</a>
-                                            <a href="<?php echo FRONT_SITE_PATH?>checkout">checkout</a>
+                                            <a href="<?php echo FRONT_SITE_PATH?>cart">ver carrito</a>
+                                            <a href="<?php echo FRONT_SITE_PATH?>checkout">ir al checkout</a>
                                         </div>
                                     </div>
 									<?php } ?>

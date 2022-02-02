@@ -38,7 +38,7 @@ if($type=='register'){
 		send_email($email,$html,'Verify your email id');
 		
 		
-		$arr=array('status'=>'success','msg'=>'Thank you for register. Please check your email id, to verify your account','field'=>'form_msg');
+		$arr=array('status'=>'success','msg'=>'Gracias por Registrarse, Revisa tu Bandeja de Entrada para Activar la Cuenta.','field'=>'form_msg');
 	}
 	echo json_encode($arr);
 }
@@ -69,16 +69,16 @@ if($type=='login'){
 					}
 					
 				}else{
-					$arr=array('status'=>'error','msg'=>'Please enter correct password');
+					$arr=array('status'=>'error','msg'=>'Ingresa la Contraseña Correcta');
 				}
 			}else{
-				$arr=array('status'=>'error','msg'=>'Your account has been deactivated.');
+				$arr=array('status'=>'error','msg'=>'Tu Cuenta ha sido Desactivada.');
 			}
 		}else{
-			$arr=array('status'=>'error','msg'=>'Please varify your email id');
+			$arr=array('status'=>'error','msg'=>'Por favor, Verifica tu Cuenta.');
 		}
 	}else{
-		$arr=array('status'=>'error','msg'=>'Please enter valid email id');	
+		$arr=array('status'=>'error','msg'=>'Ingresa una Dirección Válida de Correo Electrónico');	
 	}
 	echo json_encode($arr);
 }

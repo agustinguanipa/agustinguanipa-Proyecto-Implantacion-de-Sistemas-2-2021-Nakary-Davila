@@ -21,9 +21,8 @@ include ("header.php");
                                 <i class="ion-ios-location-outline"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h4>Our Location</h4>
-                                <p>012 345 678 / 123 456 789</p>
-                                <p><a href="#">info@example.com</a></p>
+                                <h4>Encuentrános</h4>
+                                <p>San Cristóbal, Estado Táchira, Venezuela</p>
                             </div>
                         </div>
                     </div>
@@ -33,9 +32,8 @@ include ("header.php");
                                 <i class="ion-ios-telephone-outline"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h4>Contact us Anytime</h4>
-                                <p>Mobile: 012 345 678</p>
-                                <p>Fax: 123 456 789</p>
+                                <h4>Contáctanos en Cualquier Momento</h4>
+                                <p>WhatsApp: +58 426 734 4952</p>
                             </div>
                         </div>
                     </div>
@@ -45,9 +43,8 @@ include ("header.php");
                                 <i class="ion-ios-email-outline"></i>
                             </div>
                             <div class="contact-info-content">
-                                <h4>Write Some Words</h4>
-                                <p><a href="#">Support24/7@example.com </a></p>
-                                <p><a href="#">info@example.com</a></p>
+                                <h4>Escríbenos</h4>
+                                <p><a href="#">soporte@lamagicakendy.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -55,34 +52,34 @@ include ("header.php");
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-message-wrapper">
-                            <h4 class="contact-title">GET IN TOUCH</h4>
+                            <h4 class="contact-title">CONTACTA CON NOSOTROS</h4>
                             <div class="contact-message">
                                 <form id="contact-form" action="contact_us_submit.php" method="post">
                                     <div class="row">
                                         <div class="col-lg-4">
                                             <div class="contact-form-style mb-20">
-                                                <input name="name" placeholder="Full Name" type="text" required>
+                                                <input name="name" placeholder="Nombre" type="text" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="contact-form-style mb-20">
-                                                <input name="email" placeholder="Email Address" type="email" required>
+                                                <input name="email" placeholder="Correo Electronico" type="email" required>
                                             </div>
                                         </div>
 										<div class="col-lg-4">
                                             <div class="contact-form-style mb-20">
-                                                <input name="mobile" placeholder="Mobile" type="text" required>
+                                                <input name="mobile" placeholder="Telefono" type="text" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="contact-form-style mb-20">
-                                                <input name="subject" placeholder="Subject" type="text" required>
+                                                <input name="subject" placeholder="Asunto" type="text" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="contact-form-style">
-                                                <textarea name="message" placeholder="Message" required></textarea>
-                                                <button class="submit btn-style" type="submit">SEND MESSAGE</button>
+                                                <textarea name="message" placeholder="Mensaje" required></textarea>
+                                                <button class="submit btn-style" type="submit">ENVIAR MENSAJE</button>
                                             </div>
                                         </div>
                                     </div>

@@ -11,10 +11,10 @@ if(isset($_GET['referral_code']) && $_GET['referral_code']!=''){
                         <div class="login-register-wrapper">
                             <div class="login-register-tab-list nav">
                                 <a class="active" data-toggle="tab" href="#lg1">
-                                    <h4> login </h4>
+                                    <h4> iniciar sesion </h4>
                                 </a>
                                 <a data-toggle="tab" href="#lg2">
-                                    <h4> register </h4>
+                                    <h4> registrarse </h4>
                                 </a>
                             </div>
                             <div class="tab-content">
@@ -22,13 +22,13 @@ if(isset($_GET['referral_code']) && $_GET['referral_code']!=''){
                                     <div class="login-form-container">
                                         <div class="login-register-form">
                                             <form method="post" id="frmLogin">
-                                                <input type="email" name="user_email" placeholder="Email" required>
-                                                <input type="password" name="user_password" placeholder="Password" required>
+                                                <input type="email" name="user_email" placeholder="Correo Electronico" required>
+                                                <input type="password" name="user_password" placeholder="Contraseña" required>
                                                 <div class="button-box">
-                                                    <div class="login-toggle-btn">
+                                                    <!-- <div class="login-toggle-btn">
                                                         <a href="<?php echo FRONT_SITE_PATH?>forgot_password">Forgot Password?</a>
-                                                    </div>
-                                                    <button type="submit" id="login_submit">Login</button>
+                                                    </div> -->
+                                                    <button type="submit" id="login_submit">Iniciar Sesion</button>
 													<input type="hidden" name="type" value="login"/>
 													<input type="hidden" name="is_checkout" id="is_checkout" value=""/>
 												   <div id="form_login_msg" class="success_field"></div>
@@ -41,13 +41,13 @@ if(isset($_GET['referral_code']) && $_GET['referral_code']!=''){
                                     <div class="login-form-container">
                                         <div class="login-register-form">
                                             <form method="post" id="frmRegister">
-                                                <input type="text" name="name" placeholder="Name" id="name" required>
-												<input name="email" id="email" placeholder="Email" type="email" required>
+                                                <input type="text" name="name" placeholder="Nombre" id="name" required>
+												<input name="email" id="email" placeholder="Correo Electronico" type="email" required>
 												<div id="email_error" class="error_field"></div>
-                                                <input type="password" name="password" placeholder="Password" id="password" required>
-                                                <input type="text" name="mobile" placeholder="Mobile" id="mobile" required>
+                                                <input type="password" name="password" placeholder="Contraseña" id="password" required>
+                                                <input type="text" name="mobile" placeholder="Telefono" id="mobile" required>
                                                 <div class="button-box">
-                                                    <button type="submit" id="register_submit">Register</button>
+                                                    <button type="submit" id="register_submit">Registrarse</button>
                                                 </div>
 												<input type="hidden" name="type" value="register"/>
 												<div id="form_msg" class="success_field"></div>

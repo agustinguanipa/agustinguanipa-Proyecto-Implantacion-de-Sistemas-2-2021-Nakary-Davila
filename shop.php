@@ -27,7 +27,8 @@ $arrType=array("veg","non-veg","both");
             <div class="container">
                 <div class="breadcrumb-content">
                     <ul>
-                        <li><a href="shop.php">Shop</a></li>
+						<li><a href="<?php echo FRONT_SITE_PATH?>shop">Inicio</a></li>
+                        <li><a href="shop.php">Comprar</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,11 +48,11 @@ $arrType=array("veg","non-veg","both");
                             <div class="product-sorting-wrapper">
                                 <div class="product-show shorting-style search_box_main">
 									<input class="search_box" type="textbox" id="search" value="<?php echo $search_str?>"/>
-									<input class="search_box seahc_box_btn"  type="button" class="submit btn-style" value="Search" onclick="setSearch()"/>									
+									<input class="search_box seahc_box_btn"  type="button" class="submit btn-style" value="Buscar" onclick="setSearch()"/>									
                                 </div>
 								
 								<div class="product-show shorting-style ">
-								<?php
+								<!-- <?php
 								foreach($arrType as $list){
 									$type_radio_selected='';
 									if($list==$type){
@@ -61,7 +62,7 @@ $arrType=array("veg","non-veg","both");
 									<?php echo strtoupper($list)?> <input type="radio" class="dish_radio" <?php echo $type_radio_selected?> name="type" value="<?php echo $list?>" onclick="setFoodType('<?php echo $list?>')"/>&nbsp;
 									<?php
 								}									
-								?>								
+								?>	 -->							
 								   
                                 </div>
                             </div>
@@ -99,13 +100,13 @@ $arrType=array("veg","non-veg","both");
                                                 </div>
                                                 <div class="product-content" id="dish_detail">
                                                     <h4>
-														<?php
+														<!-- <?php
 														if($product_row['type']=='veg'){
 															echo "<img src='assets/img/icon-img/veg.png'/>";
 														}else{
 															echo "<img src='assets/img/icon-img/non-veg.png'/>";
 														}
-														?>
+														?> -->
 														
 														<a href="javascript:void(0)"><?php echo $product_row['dish'];
 														getRatingByDishId($product_row['id']);
@@ -138,7 +139,7 @@ $arrType=array("veg","non-veg","both");
 													<?php if($website_close==0){?>
 													<div class="product-price-wrapper">
 														<select class="select" id="qty<?php echo $product_row['id']?>">
-															<option value="0">Qty</option>
+															<option value="0">Cant.</option>
 															<?php
 															for($i=1;$i<=20;$i++){
 																echo "<option>$i</option>";
@@ -173,10 +174,10 @@ $arrType=array("veg","non-veg","both");
                     <div class="col-lg-3">
                         <div class="shop-sidebar-wrapper gray-bg-7 shop-sidebar-mrg">
                             <div class="shop-widget">
-                                <h4 class="shop-sidebar-title">Shop By Categories</h4>
+                                <h4 class="shop-sidebar-title">Filtrar por Categorias</h4>
 								<div class="shop-catigory">
 									<ul id="faq" class="category_list">
-										<li><a href="<?php echo FRONT_SITE_PATH?>shop"><u>clear</u></a></li>
+										<li><a href="<?php echo FRONT_SITE_PATH?>shop"><u>limpiar</u></a></li>
                                         <?php 
                                         while($cat_row=mysqli_fetch_assoc($cat_res)){
                                             $class="selected";

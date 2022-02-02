@@ -31,7 +31,7 @@ if($type=='password'){
 		mysqli_query($con,"update user set password='$new_password' where id='$uid'");
 	$arr=array('status'=>'success','msg'=>'Password has been updated');
 	}else{
-		$arr=array('status'=>'error','msg'=>'Please enter correct password');		
+		$arr=array('status'=>'error','msg'=>'Ingresa la Contraseña Correcta');		
 	}
 	
 	echo json_encode($arr);

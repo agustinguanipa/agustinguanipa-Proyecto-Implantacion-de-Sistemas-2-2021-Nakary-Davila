@@ -1,7 +1,7 @@
 jQuery('#frmRegister').on('submit',function(e){
 	jQuery('.error_field').html('');
 	jQuery('#register_submit').attr('disabled',true);
-	jQuery('#form_msg').html('Please wait...');
+	jQuery('#form_msg').html('Por favor, espera...');
 	jQuery.ajax({
 		url:FRONT_SITE_PATH+'login_register_submit',
 		type:'post',
@@ -27,7 +27,7 @@ jQuery('#frmRegister').on('submit',function(e){
 jQuery('#frmLogin').on('submit',function(e){
 	jQuery('.error_field').html('');
 	jQuery('#login_submit').attr('disabled',true);
-	jQuery('#form_login_msg').html('Please wait...');
+	jQuery('#form_login_msg').html('Por favor, espera...');
 	jQuery.ajax({
 		url:FRONT_SITE_PATH+'login_register_submit',
 		type:'post',
@@ -56,7 +56,7 @@ jQuery('#frmLogin').on('submit',function(e){
 
 jQuery('#frmForgotPassword').on('submit',function(e){
 	jQuery('#forgot_submit').attr('disabled',true);
-	jQuery('#form_forgot_msg').html('Please wait...');
+	jQuery('#form_forgot_msg').html('Por favor, espera...');
 	jQuery.ajax({
 		url:FRONT_SITE_PATH+'login_register_submit',
 		type:'post',
@@ -115,14 +115,14 @@ function add_to_cart(id,type){
 			data:'qty='+qty+'&attt='+attr+'&type='+type,
 			success:function(result){
 				var data=jQuery.parseJSON(result);
-				swal("Congratulation!", "Dish added successfully", "success");
-				jQuery('#shop_added_msg_'+attr).html('(Added -'+qty+')');
+				swal("Felicidades!", "Producto Agregado Satisfactoriamente", "success");
+				jQuery('#shop_added_msg_'+attr).html('(Agre.'+qty+')');
 				jQuery('#totalCartDish').html(data.totalCartDish);
 				jQuery('#totalPrice').html(data.totalPrice+' Rs');
 				var tp1=data.totalPrice;
 				if(data.totalCartDish==1){
 					var tp=qty*data.price;
-					var html='<div class="shopping-cart-content"><ul id="cart_ul"><li class="single-shopping-cart" id="attr_'+attr+'"><div class="shopping-cart-img"><a href="javascript:void(0)"><img alt="" src="'+SITE_DISH_IMAGE+data.image+'"></a></div><div class="shopping-cart-title"><h4><a href="javascript:void(0)">'+data.dish+'</a></h4><h6>Qty: '+qty+'</h6><span>'+tp+' Rs</span></div><div class="shopping-cart-delete"><a href="javascript:void(0)" onclick=delete_cart("'+attr+'")><i class="ion ion-close"></i></a></div></li></ul><h4>Total : <span class="shop-total" id="shopTotal">'+tp+' Rs</span></h4><div class="shopping-cart-btn"><a href="cart">view cart</a><a href="checkout">checkout</a></div></div>';	
+					var html='<div class="shopping-cart-content"><ul id="cart_ul"><li class="single-shopping-cart" id="attr_'+attr+'"><div class="shopping-cart-img"><a href="javascript:void(0)"><img alt="" src="'+SITE_DISH_IMAGE+data.image+'"></a></div><div class="shopping-cart-title"><h4><a href="javascript:void(0)">'+data.dish+'</a></h4><h6>Qty: '+qty+'</h6><span>'+tp+' Rs</span></div><div class="shopping-cart-delete"><a href="javascript:void(0)" onclick=delete_cart("'+attr+'")><i class="ion ion-close"></i></a></div></li></ul><h4>Total : <span class="shop-total" id="shopTotal">'+tp+' Rs</span></h4><div class="shopping-cart-btn"><a href="cart">ver carrito</a><a href="checkout">ir al checkout</a></div></div>';	
 					jQuery('.header-cart').append(html);
 				}else{
 					var tp=qty*data.price;
@@ -135,7 +135,7 @@ function add_to_cart(id,type){
 			}
 		});
 	}else{
-		swal("Error", "Please select qty and dish item", "error");
+		swal("Error", "Selecciona Tipo y Cantidad", "error");
 	}
 }
 
@@ -171,7 +171,7 @@ function delete_cart(id,is_type){
 
 jQuery('#frmProfile').on('submit',function(e){
 	jQuery('#profile_submit').attr('disabled',true);
-	jQuery('#form_msg').html('Please wait...');
+	jQuery('#form_msg').html('Por favor, espera...');
 	jQuery.ajax({
 		url:FRONT_SITE_PATH+'update_profile',
 		type:'post',
@@ -191,7 +191,7 @@ jQuery('#frmProfile').on('submit',function(e){
 
 jQuery('#frmPassword').on('submit',function(e){
 	jQuery('#password_submit').attr('disabled',true);
-	jQuery('#password_form_msg').html('Please wait...');
+	jQuery('#password_form_msg').html('Por favor, espera...');
 	jQuery.ajax({
 		url:FRONT_SITE_PATH+'update_profile',
 		type:'post',
