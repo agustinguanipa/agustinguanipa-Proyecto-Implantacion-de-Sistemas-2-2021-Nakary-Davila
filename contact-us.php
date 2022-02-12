@@ -6,8 +6,8 @@ include ("header.php");
             <div class="container">
                 <div class="breadcrumb-content">
                     <ul>
-                        <li><a href="<?php echo FRONT_SITE_PATH?>shop">Home</a></li>
-                        <li class="active"> Contact Us </li>
+                        <li><a href="<?php echo FRONT_SITE_PATH?>shop">Inicio</a></li>
+                        <li class="active"> Contacto </li>
                     </ul>
                 </div>
             </div>

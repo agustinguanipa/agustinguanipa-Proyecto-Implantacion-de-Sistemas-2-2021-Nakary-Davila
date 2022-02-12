@@ -25,8 +25,8 @@ $res=mysqli_query($con,$sql);
 ?>
   <div class="card">
             <div class="card-body">
-              <h1 class="grid_title">Category Master</h1>
-			  <a href="manage_category.php" class="add_link">Add Category</a>
+              <h1 class="grid_title">Categorías</h1>
+			  <a href="manage_category.php" class="add_link">Añadir Categoría</a>
               <div class="row grid_box">
 				
                 <div class="col-12">
@@ -34,10 +34,10 @@ $res=mysqli_query($con,$sql);
                     <table id="order-listing" class="table">
                       <thead>
                         <tr>
-                            <th width="10%">S.No #</th>
-                            <th width="50%">Category</th>
-                            <th width="15%">Order Number</th>
-                            <th width="25%">Actions</th>
+                            <th width="10%">#</th>
+                            <th width="50%">Nombre</th>
+                            <th width="15%">Nº Orden</th>
+                            <th width="25%">Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -50,21 +50,21 @@ $res=mysqli_query($con,$sql);
                             <td><?php echo $row['category']?></td>
 							<td><?php echo $row['order_number']?></td>
 							<td>
-								<a href="manage_category.php?id=<?php echo $row['id']?>"><label class="badge badge-success hand_cursor">Edit</label></a>&nbsp;
+								<a href="manage_category.php?id=<?php echo $row['id']?>"><label class="badge badge-success hand_cursor">Editar</label></a>&nbsp;
 								<?php
 								if($row['status']==1){
 								?>
-								<a href="?id=<?php echo $row['id']?>&type=deactive"><label class="badge badge-danger hand_cursor">Active</label></a>
+								<a href="?id=<?php echo $row['id']?>&type=deactive"><label class="badge badge-danger hand_cursor">Activo</label></a>
 								<?php
 								}else{
 								?>
-								<a href="?id=<?php echo $row['id']?>&type=active"><label class="badge badge-info hand_cursor">Deactive</label></a>
+								<a href="?id=<?php echo $row['id']?>&type=active"><label class="badge badge-info hand_cursor">Inactivo</label></a>
 								<?php
 								}
 								
 								?>
 								&nbsp;
-								<a href="?id=<?php echo $row['id']?>&type=delete"><label class="badge badge-danger delete_red hand_cursor">Delete</label></a>
+								<a href="?id=<?php echo $row['id']?>&type=delete"><label class="badge badge-danger delete_red hand_cursor">Eliminar</label></a>
 							</td>
                            
                         </tr>

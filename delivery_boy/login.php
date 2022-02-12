@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Delivery Boy - Login</title>
+  <title>Delivery | La Magica Kendy</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../admin/assets/css/style.css">
 </head>
@@ -38,18 +38,18 @@ if(isset($_POST['submit'])){
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left p-5">
               <div class="brand-logo text-center">
-                <img src="../admin/assets/images/logo.png" alt="logo">
+                <img src="../admin/assets/images/logo/logo.png" alt="logo">
               </div>
-              <h6 class="font-weight-light">Sign in to continue.</h6>
+              <h6 class="font-weight-light">Iniciar Sesion</h6>
               <form class="pt-3" method="post">
                 <div class="form-group">
-                  <input type="textbox" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Mobile" name="mobile" required>
+                  <input type="textbox" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Telefono" name="mobile" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password"  name="password" required>
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Contraseña"  name="password" required>
                 </div>
                 <div class="mt-3">
-                  <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="SIGN IN" name="submit"/>
+                  <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESION" name="submit"/>
                 </div>
                 
               </form>

@@ -12,13 +12,13 @@
               '#fc7242',
               '#4d13d1',
               '#998eac',
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderColor: [
               '#fc7242',
               '#4d13d1',
               '#998eac',
-              '#5e2572'
+              '#cb0d8e'
             ],
           }],
       
@@ -65,7 +65,7 @@
             label: 'Support',
             data: [2500, 8030, 3050, 3300, 4510, 7800, 5500],
             borderColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderWidth: 3,
             fill: false,
@@ -127,7 +127,7 @@
             label: 'Support',
             data: [2500, 8030, 3050, 3300, 4510, 7800, 5500],
             borderColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderWidth: 3,
             fill: false,
@@ -199,10 +199,10 @@
           {
             data: [50, 40, 48, 70, 50, 63, 63, 42, 42, 51, 35, 35, 35, 40, 61, 35],
             backgroundColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderWidth: 1,
             fill: 'origin',
@@ -298,10 +298,10 @@
           {
             data: [50, 40, 48, 70, 50, 63, 63, 42, 42, 51, 35, 35, 35, 40, 61, 35],
             backgroundColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderColor: [
-              '#5e2572'
+              '#cb0d8e'
             ],
             borderWidth: 1,
             fill: 'origin',
@@ -398,7 +398,7 @@
           datasets: [{
               label: 'Chrome',
               data: [530, 600, 490, 420, 800, 590],
-              backgroundColor: '#5e2572'
+              backgroundColor: '#cb0d8e'
             },
             {
               label: 'Safari',
@@ -476,7 +476,7 @@
           datasets: [{
               label: 'Chrome',
               data: [530, 600, 490, 420, 800, 590],
-              backgroundColor: '#5e2572'
+              backgroundColor: '#cb0d8e'
             },
             {
               label: 'Safari',

@@ -18,7 +18,7 @@ $res=mysqli_query($con,$sql);
 
 <div class="cart-main-area pt-95 pb-100">
             <div class="container">
-                <h3 class="page-title">Order History</h3>
+                <h3 class="page-title">Historial de Ordenes</h3>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                         <form method="post">
@@ -27,13 +27,13 @@ $res=mysqli_query($con,$sql);
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Order No</th>
-                                            <th>Price</th>
-											<th>Coupon</th>
-                                            <th>Address</th>
-											<th>Zipcode</th>
-                                            <th>Order Status</th>
-                                            <th>Payment Status</th>
+                                            <th># Orden</th>
+                                            <th>Precio</th>
+											<!-- <th>Coupon</th> -->
+                                            <th>Direccion</th>
+											<th>Codigo Postal</th>
+                                            <th>Status Orden</th>
+                                            <th>Status Pago</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -46,18 +46,18 @@ $res=mysqli_query($con,$sql);
 												<div class="div_order_id"><a href="<?php echo FRONT_SITE_PATH.'order_detail?id='.$row['id']?>"><?php echo $row['id']?></div></a>
 											
 											<br/>
-											<a href="<?php echo FRONT_SITE_PATH?>download_invoice?id=<?php echo $row['id']?>"><img src='<?php echo FRONT_SITE_PATH?>assets/img/icon-img/pdf.png' width="20px" title="Download Invoice"/></a>
+											<!-- <a href="<?php echo FRONT_SITE_PATH?>download_invoice?id=<?php echo $row['id']?>"><img src='<?php echo FRONT_SITE_PATH?>assets/img/icon-img/pdf.png' width="20px" title="Download Invoice"/></a> -->
 											</td>
                                             <td style="font-size:14px;">
 											<?php echo $row['total_price']?></td>
-                                            <td>
+                                            <!-- <td>
 											<?php
 											if($row['coupon_code']!=''){
 											?>
 											Coupon Code:- <?php echo $row['coupon_code']?><br/>
 											Final Price:- <?php echo $row['final_price']?>
 											<?php } ?>
-											</td>
+											</td> -->
 											<td><?php echo $row['address']?></td>
 											<td><?php echo $row['zipcode']?></td>
 											<td>

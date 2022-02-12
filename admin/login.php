@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Food Ordering Admin Login</title>
+  <title>Admin | La Magica Kendy</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/css/vendor.bundle.base.css">
@@ -44,18 +44,18 @@ if(isset($_POST['submit'])){
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left p-5">
               <div class="brand-logo text-center">
-                <img src="assets/images/logo.png" alt="logo">
+                <img src="assets/images/logo/logo.png" alt="logo">
               </div>
-              <h6 class="font-weight-light">Sign in to continue.</h6>
+              <h6 class="font-weight-light">Iniciar Sesión</h6>
               <form class="pt-3" method="post">
                 <div class="form-group">
-                  <input type="textbox" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username" name="username" required>
+                  <input type="textbox" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Usuario" name="username" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password"  name="password" required>
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Contraseña"  name="password" required>
                 </div>
                 <div class="mt-3">
-                  <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="SIGN IN" name="submit"/>
+                  <input type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="INICIAR SESIÓN" name="submit"/>
                 </div>
                 
               </form>

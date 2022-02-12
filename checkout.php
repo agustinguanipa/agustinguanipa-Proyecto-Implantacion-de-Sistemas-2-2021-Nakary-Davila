@@ -113,7 +113,7 @@ if(isset($_POST['place_order'])){
                             <div id="faq" class="panel-group">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h5 class="panel-title"><span>1.</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-1">Checkout method</a></h5>
+                                        <h5 class="panel-title"><span>1.</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-1">Checkout</a></h5>
                                     </div>
                                     <div id="<?php echo $box_id?>" class="panel-collapse collapse <?php echo $is_show?>">
                                         <div class="panel-body">
@@ -122,24 +122,24 @@ if(isset($_POST['place_order'])){
                                                 <div class="col-lg-12">
                                                     <div class="checkout-login">
                                                         <div class="title-wrap">
-                                                            <h4 class="cart-bottom-title section-bg-white">LOGIN</h4>
+                                                            <h4 class="cart-bottom-title section-bg-white">INICIAR SESION</h4>
                                                         </div>
                                                         <p>&nbsp;</p>
                                                         <form method="post" id="frmLogin">
                                                             <div class="login-form">
-                                                                <label>Email Address * </label>
+                                                                <label>Email * </label>
                                                                 <input name="user_email" placeholder="Email" required>
                                                             </div>
                                                             <div class="login-form">
-                                                                <label>Password *</label>
+                                                                <label>Contraseña *</label>
                                                                 <input type="password" name="user_password" placeholder="Password" required>
 																<input type="hidden" name="type" value="login"/>
 																<input type="hidden" name="is_checkout" value="yes" id="is_checkout"/>
                                                             </div>
                                                         
                                                          <div class="checkout-login-btn">
-                                                            <button type="submit" id="login_submit" class="my_btn">Login</button>
-															<a href="<?php echo FRONT_SITE_PATH?>login_register" style="background-color: #190d7a;color:#fff;">Register Now</a>
+                                                            <button type="submit" id="login_submit" class="my_btn">Iniciar Sesion</button>
+															<a href="<?php echo FRONT_SITE_PATH?>login_register" style="background-color: #190d7a;color:#fff;">Registrarse</a>
                                                         </div>
 														<div id="form_login_msg"></div>
 														</form>
@@ -151,7 +151,7 @@ if(isset($_POST['place_order'])){
                                 </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h5 class="panel-title"><span>2.</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-2">Other information</a></h5>
+                                        <h5 class="panel-title"><span>2.</span> <a data-toggle="collapse" data-parent="#faq" href="#payment-2">Otra Información</a></h5>
                                     </div>
                                     <div id="<?php echo $final_box_id?>" class="panel-collapse collapse <?php echo $final_show?>">
                                         <div class="panel-body">
@@ -160,60 +160,60 @@ if(isset($_POST['place_order'])){
 													<div class="row">
 														<div class="col-lg-3 col-md-6">
 															<div class="billing-info">
-																<label>First Name</label>
+																<label>Primer Nombre</label>
 																<input type="text" name="checkout_name" required value="<?php echo $userArr['name']?>">
 															</div>
 														</div>
 														<div class="col-lg-3 col-md-6">
 															<div class="billing-info">
-																<label>Email Address</label>
+																<label>Email</label>
 																<input type="email"  name="checkout_email" required value="<?php echo $userArr['email']?>">
 															</div>
 														</div>
 														<div class="col-lg-3 col-md-6">
 															<div class="billing-info">
-																<label>Mobile</label>
+																<label>Telefono</label>
 																<input type="text"  name="checkout_mobile" required value="<?php echo $userArr['mobile']?>">
 															</div>
 														</div>
 														<div class="col-lg-3 col-md-6">
 															<div class="billing-info">
-																<label>Zip/Postal Code</label>
+																<label>Zip/Codigo Postal</label>
 																<input type="text"  name="checkout_zip" required>
 															</div>
 														</div>
 														<div class="col-lg-12 col-md-12">
 															<div class="billing-info">
-																<label>Address</label>
+																<label>Direccion</label>
 																<input type="text"  name="checkout_address" required>
 															</div>
 														</div>
-														<div class="col-lg-3 col-md-12">
+														<!-- <div class="col-lg-3 col-md-12">
 															<div class="billing-info">
 																<label>Coupon Code</label>
 																<input type="text"  name="coupon_code" id="coupon_code" >
 															</div>
 															<div id="coupon_code_msg"></div>
-														</div>
-														<div class="col-lg-5 col-md-12">
+														</div> -->
+														<!-- <div class="col-lg-5 col-md-12">
 															<div class="billing-back-btn">
 																<div class="billing-btn">
 																	<button type="button" name="place_order" onclick="apply_coupon()" >Apply Coupon</button>
 																</div>
 															</div>
-														</div>
+														</div> -->
 													</div>
 													
 													<div class="ship-wrapper">
 														<div class="single-ship">
 															<input type="radio" name="payment_type" value="cod">
-															<label>Cash on Delivery(COD)</label>
+															<label>Efectivo (Pago al Repartidor)</label>
 														</div>
-														<div class="single-ship">
+														<!-- <div class="single-ship">
 															<input type="radio" name="payment_type" value="paytm"   checked="checked">
 															<label>PayTm</label>
-														</div>
-														<?php
+														</div> -->
+														<!-- <?php
 														$is_dis='';
 														$low_msg='';
 														if($getWalletAmt>=$totalPrice){
@@ -231,7 +231,7 @@ if(isset($_POST['place_order'])){
 															echo $low_msg;
 															?>
 															</span>
-														</div>
+														</div> -->
 														
 														<!--<div class="single-ship">
 															<input type="radio" name="address" value="dadress">
@@ -240,7 +240,7 @@ if(isset($_POST['place_order'])){
 													</div>
 													<div class="billing-back-btn">
 														<div class="billing-btn">
-															<button type="submit" name="place_order">Place Your Order</button>
+															<button type="submit" name="place_order">Enviar Orden</button>
 														</div>
 														
 													</div>
@@ -261,7 +261,7 @@ if(isset($_POST['place_order'])){
                     <div class="col-lg-3">
                         <div class="checkout-progress">
                             <div class="shopping-cart-content-box">
-								<h4 class="checkout_title">Cart Details</h4>
+								<h4 class="checkout_title">Detalle del Carrito</h4>
 								<ul>
 									<?php foreach($cartArr as $key=>$list){ ?>
 									<li class="single-shopping-cart">
@@ -269,25 +269,25 @@ if(isset($_POST['place_order'])){
 											<a href="#"><img alt="" src="<?php echo SITE_DISH_IMAGE.$list['image']?>"></a>
 										</div>
 										<div class="shopping-cart-title">
-											<h4><a href="#">Phantom Remote </a></h4>
-											<h6>Qty: <?php echo $list['qty']?></h6>
+											<!-- <h4><a href="#">Phantom Remote </a></h4> -->
+											<h6>Cant: <?php echo $list['qty']?></h6>
 											<span><?php echo 
-														$list['qty']*$list['price'];?> Rs</span>
+														$list['qty']*$list['price'];?> $</span>
 										</div>
 										
 									</li>
 									<?php } ?>
 								</ul>
 								<div class="shopping-cart-total">
-									<h4>Total : <span class="shop-total"><?php echo $totalPrice?> Rs</span></h4>
+									<h4>Total : <span class="shop-total"><?php echo $totalPrice?> $</span></h4>
 								</div>
 								
-								<div class="shopping-cart-total coupon_price_box">
+								<!-- <div class="shopping-cart-total coupon_price_box">
 									<h4>Coupon Code : <span class="shop-total coupon_code_str"></span></h4>
-								</div>
-								<div class="shopping-cart-total coupon_price_box">
-									<h4>Final Price : <span class="shop-total final_price"></span></h4>
-								</div>
+								</div> -->
+								<!-- <div class="shopping-cart-total coupon_price_box">
+									<h4>Total : <span class="shop-total final_price"></span></h4>
+								</div> -->
 							</div>
                         </div>
                     </div>

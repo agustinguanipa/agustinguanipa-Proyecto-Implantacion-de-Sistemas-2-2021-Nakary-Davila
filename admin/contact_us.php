@@ -16,7 +16,7 @@ $res=mysqli_query($con,$sql);
 ?>
   <div class="card">
             <div class="card-body">
-              <h1 class="grid_title">Contact Us</h1>
+              <h1 class="grid_title">Contacto</h1>
               <div class="row grid_box">
 				
                 <div class="col-12">
@@ -24,13 +24,13 @@ $res=mysqli_query($con,$sql);
                     <table id="order-listing" class="table">
                       <thead>
                         <tr>
-                            <th width="10%">S.No #</th>
-                            <th width="10%">Name</th>
+                            <th width="10%">#</th>
+                            <th width="10%">Nombre</th>
 							<th width="10%">Email</th>
-							<th width="10%">Mobile</th>
-							<th width="19%">Subject</th>
-							<th width="40%">Message</th>
-                            <th width="10%">Actions</th>
+							<th width="10%">Telefono</th>
+							<th width="19%">Asunto</th>
+							<th width="40%">Mensaje</th>
+                            <th width="10%">Acciones</th>
                         </tr>
                       </thead>
                       <tbody>

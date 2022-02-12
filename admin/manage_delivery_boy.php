@@ -40,26 +40,26 @@ if(isset($_POST['submit'])){
 }
 ?>
 <div class="row">
-			<h1 class="grid_title ml10 ml15">Manage Delivery Boy</h1>
+			<h1 class="grid_title ml10 ml15">Añadir Repartidor</h1>
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample" method="post">
                     <div class="form-group">
-                      <label for="exampleInputName1">Name</label>
-                      <input type="text" class="form-control" placeholder="name" name="name" required value="<?php echo $name?>">
+                      <label for="exampleInputName1">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Nombre" name="name" required value="<?php echo $name?>">
                     </div>
 					<div class="form-group">
-                      <label for="exampleInputName1">Mobile</label>
-                      <input type="text" class="form-control" placeholder="mobile" name="mobile" required value="<?php echo $mobile?>">
+                      <label for="exampleInputName1">Telefono</label>
+                      <input type="text" class="form-control" placeholder="Telefono" name="mobile" required value="<?php echo $mobile?>">
 					  <div class="error mt8"><?php echo $msg?></div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail3" required>Password</label>
-                      <input type="textbox" class="form-control" placeholder="Password" name="password"  value="<?php echo $password?>">
+                      <label for="exampleInputEmail3" required>Contraseña</label>
+                      <input type="textbox" class="form-control" placeholder="Contraseña" name="password"  value="<?php echo $password?>">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary mr-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mr-2" name="submit">Añadir</button>
                   </form>
                 </div>
               </div>

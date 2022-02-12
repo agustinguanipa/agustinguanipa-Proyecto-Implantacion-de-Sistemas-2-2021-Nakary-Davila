@@ -7,7 +7,7 @@ $res=mysqli_query($con,$sql);
 ?>
   <div class="card">
             <div class="card-body">
-              <h1 class="grid_title">Order Master</h1>
+              <h1 class="grid_title">Ordenes</h1>
 			  <div class="row grid_box">
 				
                 <div class="col-12">
@@ -15,14 +15,14 @@ $res=mysqli_query($con,$sql);
                     <table id="order-listing" class="table">
                       <thead>
                         <tr>
-                            <th width="5%">Order Id</th>
-                            <th width="20%">Name/Email/Mobile</th>
-							<th width="20%">Address/Zipcode</th>
-							<th width="5%">Price</th>
-							<th width="10%">Payment Type</th>
-							<th width="10%">Payment Status</th>
-							<th width="10%">Order Status</th>
-                            <th width="15%">Added On</th>
+                            <th width="5%"># Orden</th>
+                            <th width="20%">Nombre/Correo/Telefono</th>
+							<th width="20%">Direccion/Codigo</th>
+							<th width="5%">Precio</th>
+							<th width="10%">Tipo de Pago</th>
+							<th width="10%">Status Pago</th>
+							<th width="10%">Status Orden</th>
+							<th width="15%">Fecha</th>
                         </tr>
                       </thead>
                       <tbody>

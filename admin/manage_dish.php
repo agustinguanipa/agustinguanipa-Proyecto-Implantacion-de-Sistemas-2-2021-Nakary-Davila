@@ -118,15 +118,15 @@ $res_category=mysqli_query($con,"select * from category where status='1' order b
 $arrType=array("veg","non-veg");
 ?>
 <div class="row">
-			<h1 class="grid_title ml10 ml15">Dish</h1>
+			<h1 class="grid_title ml10 ml15">Añadir Dulce</h1>
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                      <label for="exampleInputName1">Category</label>
+                      <label for="exampleInputName1">Categoría</label>
                       <select class="form-control" name="category_id" required>
-						<option value="">Select Category</option>
+						<option value="">Seleccionar Categoría</option>
 						<?php
 						while($row_category=mysqli_fetch_assoc($res_category)){
 							if($row_category['id']==$category_id){
@@ -140,12 +140,12 @@ $arrType=array("veg","non-veg");
 					  
                     </div>
 					<div class="form-group">
-                      <label for="exampleInputName1">Dish</label>
-                      <input type="text" class="form-control" placeholder="dish" name="dish" required value="<?php echo $dish?>">
+                      <label for="exampleInputName1">Nombre del Dulce</label>
+                      <input type="text" class="form-control" placeholder="Nombre" name="dish" required value="<?php echo $dish?>">
 					  <div class="error mt8"><?php echo $msg?></div>
                     </div>
-					<div class="form-group">
-                      <label for="exampleInputName1">Type</label>
+					<!-- <div class="form-group">
+                      <label for="exampleInputName1">Tipo</label>
                       <select class="form-control" name="type" required>
 						<option value="">Select Type</option>
 						<?php 
@@ -159,31 +159,31 @@ $arrType=array("veg","non-veg");
 						?>
 					  </select>
 					  
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                      <label for="exampleInputEmail3" required>Dish Detail</label>
-                      <textarea name="dish_detail" class="form-control" placeholder="Dish Detail"><?php echo $dish_detail?></textarea>
+                      <label for="exampleInputEmail3" required>Detalles del Dulce</label>
+                      <textarea name="dish_detail" class="form-control" placeholder="Detalles"><?php echo $dish_detail?></textarea>
                     </div>
 					<div class="form-group">
-                      <label for="exampleInputEmail3">Dish Image</label>
-                      <input type="file" class="form-control" placeholder="Dish Image" name="image" <?php echo $image_status?>>
+                      <label for="exampleInputEmail3">Imagen</label>
+                      <input type="file" class="form-control" placeholder="Imagen" name="image" <?php echo $image_status?>>
 					  <div class="error mt8"><?php echo $image_error?></div>
                     </div>
 					<div class="form-group" id="dish_box1">
-						<label for="exampleInputEmail3">Dish Attributes</label>
+						<label for="exampleInputEmail3">Atributos del Dulce</label>
 					<?php if($id==0){?>
 						<div class="row">
 							<div class="col-4">
-								<input type="text" class="form-control" placeholder="Attribute" name="attribute[]" required>
+								<input type="text" class="form-control" placeholder="Atributo" name="attribute[]" required>
 							</div>
 							<div class="col-3">
-								<input type="text" class="form-control" placeholder="Price" name="price[]" required>
+								<input type="text" class="form-control" placeholder="Precio" name="price[]" required>
 							</div>
 							<div class="col-3">
 								<select required name="status[]" class="form-control">
-									<option value="">Select Status</option>
-									<option value="1">Active</option>
-									<option value="0">Deactive</option>
+									<option value="">Seleccionar Status</option>
+									<option value="1">Activo</option>
+									<option value="0">Inactivo</option>
 								</select>
 							</div>
 						</div>
@@ -202,24 +202,24 @@ $arrType=array("veg","non-veg");
 							</div>
 							<div class="col-3">
 								<select required name="status[]" class="form-control">
-									<option value="">Select Status</option>
+									<option value="">Seleccionar Status</option>
 									<?php
 									if($dish_details_row['status']==1){
 									?>
-										<option value="1" selected>Active</option>
-										<option value="0">Deactive</option>
+										<option value="1" selected>Activo</option>
+										<option value="0">Inactivo</option>
 									<?php } ?>
 									<?php
 									if($dish_details_row['status']==0){
 									?>
-										<option value="1">Active</option>
-										<option value="0" selected>Deactive</option>
+										<option value="1">Activo</option>
+										<option value="0" selected>Inactivo</option>
 									<?php } ?>
 								</select>
 							</div>
 							<?php if($ii!=1){
 							?>
-							<div class="col-2"><button type="button" class="btn badge-danger mr-2" onclick="remove_more_new('<?php echo $dish_details_row['id']?>')">Remove</button></div>
+							<div class="col-2"><button type="button" class="btn badge-danger mr-2" onclick="remove_more_new('<?php echo $dish_details_row['id']?>')">Quitar</button></div>
 							
 							<?php
 							}
@@ -230,9 +230,9 @@ $arrType=array("veg","non-veg");
 					} } ?>
 					</div>
 						
-                    <button type="submit" class="btn btn-primary mr-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mr-2" name="submit">Añadir</button>
 					
-					<button type="button" class="btn badge-danger mr-2" onclick="add_more()">Add More</button>
+					<button type="button" class="btn badge-danger mr-2" onclick="add_more()">Agregar</button>
                   </form>
                 </div>
               </div>

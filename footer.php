@@ -4,7 +4,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-7">
                             <div class="copyright">
-                                <p >Copyright © Nakary Davila. Proyecto para la Asignatura Implantación de Sistemas. UNEFA.</p>
+                                <p>Copyright © Nakary Davila. Proyecto para la Asignatura Implantación de Sistemas. UNEFA.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-5">

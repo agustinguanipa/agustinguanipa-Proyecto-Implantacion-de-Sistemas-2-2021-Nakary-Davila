@@ -14,8 +14,8 @@ if(isset($_SESSION['COUPON_CODE'])){
             <div class="container">
                 <div class="breadcrumb-content">
                     <ul>
-                        <li><a href="<?php echo FRONT_SITE_PATH?>shop">Home</a></li>
-                        <li class="active">Order Placed </li>
+                        <li><a href="<?php echo FRONT_SITE_PATH?>shop">Inicio</a></li>
+                        <li class="active">Orden Enviada </li>
                     </ul>
                 </div>
             </div>
@@ -25,7 +25,7 @@ if(isset($_SESSION['COUPON_CODE'])){
                 <div class="row">
                     <div class="col-lg-12 col-md-7 d-flex align-items-center">
                         <div class="overview-content-2">
-                            <h2>Order has been placed successfully. <br/><br/>Order Id <?php echo $_SESSION['ORDER_ID']?></h2>
+                            <h2>Tu Orden ha sido enviada satisfactoriamente. <br/><br/># Orden: <?php echo $_SESSION['ORDER_ID']?></h2>
                         </div>
                     </div>
                     

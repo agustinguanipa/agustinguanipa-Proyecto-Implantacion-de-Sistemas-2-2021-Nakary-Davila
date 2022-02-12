@@ -36,22 +36,22 @@ if(isset($_POST['submit'])){
 }
 ?>
 <div class="row">
-			<h1 class="grid_title ml10 ml15">Manage Category</h1>
+			<h1 class="grid_title ml10 ml15">Añadir Categoría</h1>
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample" method="post">
                     <div class="form-group">
-                      <label for="exampleInputName1">Category</label>
-                      <input type="text" class="form-control" placeholder="Category" name="category" required value="<?php echo $category?>">
+                      <label for="exampleInputName1">Categoría</label>
+                      <input type="text" class="form-control" placeholder="Categoria" name="category" required value="<?php echo $category?>">
 					  <div class="error mt8"><?php echo $msg?></div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail3" required>Order Number</label>
-                      <input type="textbox" class="form-control" placeholder="Order Number" name="order_number"  value="<?php echo $order_number?>">
+                      <label for="exampleInputEmail3" required>Nº de Orden (orden en la lista)</label>
+                      <input type="textbox" class="form-control" placeholder="Numero de Orden" name="order_number"  value="<?php echo $order_number?>">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary mr-2" name="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary mr-2" name="submit">Añadir</button>
                   </form>
                 </div>
               </div>
