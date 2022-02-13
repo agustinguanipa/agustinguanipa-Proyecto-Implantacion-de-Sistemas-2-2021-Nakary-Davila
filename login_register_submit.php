@@ -25,7 +25,7 @@ if($type=='register'){
 		}else{
 			$from_referral_code='';
 		}
-		mysqli_query($con,"insert into user(name,email,mobile,password,status,email_verify,added_on,rand_str,referral_code,from_referral_code) values('$name','$email','$mobile','$new_password','1','0','$added_on','$rand_str','$referral_code','$from_referral_code')");
+		mysqli_query($con,"insert into user(name,email,mobile,password,status,email_verify,added_on,rand_str,referral_code,from_referral_code) values('$name','$email','$mobile','$new_password','1','1','$added_on','$rand_str','$referral_code','$from_referral_code')");
 		$id=mysqli_insert_id($con);
 		unset($_SESSION['FROM_REFERRAL_CODE']);
 		
@@ -38,7 +38,7 @@ if($type=='register'){
 		send_email($email,$html,'Verify your email id');
 		
 		
-		$arr=array('status'=>'success','msg'=>'Gracias por Registrarse, Revisa tu Bandeja de Entrada para Activar la Cuenta.','field'=>'form_msg');
+		$arr=array('status'=>'success','msg'=>'Gracias por Registrarse.','field'=>'form_msg');
 	}
 	echo json_encode($arr);
 }
